@@ -62,7 +62,3 @@ GOOGLE_API_KEY = YOUR_API_KEY
 ```
 python -m streamlit run app.py
 ```
-
-
-## Result:-
-![My test image](readme_img/test1.png)
