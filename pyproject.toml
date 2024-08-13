@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "chatgpt-clone-gemini-streamlit"
+version = "0.1.0"
+description = ""
+authors = ["narendra-bluebash <narendra.dangi@bluebash.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.37.1"
+langchain-community = "^0.2.12"
+langchain-google-genai = "^1.0.8"
+python-dotenv = "^1.0.1"
+pypdf = "^4.3.1"
+faiss-gpu = "^1.7.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
