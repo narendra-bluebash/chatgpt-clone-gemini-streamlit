@@ -32,8 +32,8 @@ Follow these steps to set up the project on your local machine:
 **1. Clone the Repository:**
 - Begin by cloning the repository to your local machine:
 ```
-https://github.com/langchain-tech/Ragify-engine.git
-cd Ragify-engine
+https://github.com/narendra-bluebash/chatgpt-clone-gemini-streamlit.git
+cd chatgpt-clone-gemini-streamlit
 ```
 
 **2. Install project dependencies:**
@@ -55,42 +55,14 @@ This step is optional because Poetry automatically manages the virtual environme
 **4. Set Up Environment Variables:**
 - Create a .env file in the root directory of your project and add the required environment variables. For example:
 ```
-OPENAI_API_KEY = Your_OPENAI_API_KEY
-POSTGRES_URL_EMBEDDINDS = YOUR_POSTGRES_URL,  like:-postgresql+psycopg://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}
-POSTGRES_URL = YOUR_POSTGRES_URL ,  like:- postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}
-COHERE_API_KEY = YOUR_COHERE_API_KEY
+GOOGLE_API_KEY = YOUR_API_KEY
 ```
 
 **5. Run Streamlit app**
 ```
-python -m streamlit run web.py
+python -m streamlit run app.py
 ```
 
-**5. Run Data ingestion file**
-- This command will insert data into your postgres database
-```
-python3 app.py --help
-```
-- usage: app.py [-h] --filename FILENAME [--parser_name PARSER_NAME]
-- Process the file and extract text chunks
-
-options:
--  -h, --help                      show this help message and exit
--  --filename FILENAME             The path to the file
--  --parser_name PARSER_NAME       The name of the parser to use like book, laws, manual, naive, one, paper, presentation, qa, resume, table
-
-
-## Currently Supported Documnets are:-
-- book:-   pdf, txt, htm|html, doc, (In future docx).
-- laws:-   pdf, txt, htm|html, doc, docx.
-- manual:- pdf, docx.
-- naive:-  pdf, txt|py|js|java|c|cpp|h|php|go|ts|sh|cs|kt, htm|html, doc, docx, json, md|markdown, xlsx.
-- one:-    pdf, txt, htm|html, doc, docx, xlsx.
-- paper:-  pdf.
-- presentation:-  pdf, pptx.
-- qa:-     pdf, txt|csv, md|markdown, docx, xlsx.
-- resume:- working on it.
-- table:-  xlsx, txt|csv
 
 ## Result:-
 ![My test image](readme_img/test1.png)
